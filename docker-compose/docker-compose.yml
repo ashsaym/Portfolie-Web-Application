@@ -1,32 +1,30 @@
 version: '3.8'
 
 services:
-  mysql_db:
-    image: mysql:latest
-    container_name: mysql_db
+  postgres_db:
+    image: postgres:latest
+    container_name: postgres_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Saym7296
-      MYSQL_DATABASE: portfolio_db
-      MYSQL_USER: saym
-      MYSQL_PASSWORD: Saym7296
+      POSTGRES_PASSWORD: Saym7296
+      POSTGRES_DB: portfolio_db
+      POSTGRES_USER: saym
     ports:
-      - "3306:3306"
+      - "5432:5432"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - postgres_data:/var/lib/postgresql/data
 
-  phpmyadmin:
-    image: phpmyadmin:latest
-    container_name: phpmyadmin
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
     restart: always
     depends_on:
-      - mysql_db
+      - postgres_db
     environment:
-      PMA_HOST: mysql_db
-      PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: Saym7296
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: Saym7296
     ports:
       - "8080:80"
 
 volumes:
-  mysql_data:
+  postgres_data:
