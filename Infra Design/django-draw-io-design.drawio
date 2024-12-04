@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1" pages="2">
   <diagram name="Page-1" id="lS61JWUqUJ9kZ2fYjl9S">
     <mxGraphModel dx="2420" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -74,6 +74,65 @@
         </mxCell>
         <mxCell id="Yd9kcJZPeYB2t_xTYy9D-22" value="frontend" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="530" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PZk_GJQu3x-2GtEZXmgy" name="Page-2">
+    <mxGraphModel dx="1570" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OABLbPbtJSVTgdC8YN61-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="530" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-2" value="Laptop" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="355" y="60" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="140" width="160" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-4" value="Docker" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="180" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-6" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-9">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-8" value="pgadmin" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-9">
+          <mxGeometry x="10" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="180" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-5" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-10">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-7" value="postgres" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-10">
+          <mxGeometry x="10" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="140" width="170" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-14" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="490" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-12" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-14">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-13" value="django" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="OABLbPbtJSVTgdC8YN61-14">
+          <mxGeometry x="10" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-15" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OABLbPbtJSVTgdC8YN61-3" target="OABLbPbtJSVTgdC8YN61-11">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="530" as="sourcePoint" />
+            <mxPoint x="470" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OABLbPbtJSVTgdC8YN61-16" value="localhost" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="340" y="300" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -8,8 +8,23 @@ SECRET_KEY = '^l)7d*%h&db4uft@dk%h-w&nup#pu%)a!d)c7jwgoixo5_hm0$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
+ROOT_URLCONF = 'Settings.urls'
+WSGI_APPLICATION = 'Settings.wsgi.application'
+
+
+# Internationalization
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
+USE_I18N = True
+USE_TZ = True
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -23,8 +38,6 @@ INSTALLED_APPS = [
     'Users',
 ]
 
-
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -34,8 +47,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-ROOT_URLCONF = 'Settings.urls'
 
 TEMPLATES = [
     {
@@ -53,23 +64,21 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Settings.wsgi.application'
-
-
 # Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_db',  # The name of your PostgreSQL database
+        'USER': 'saym',  # The username for your database
+        'PASSWORD': 'Saym7296',  # The password for your database user
+        'HOST': 'localhost',  # The host where PostgreSQL is running, e.g., 'localhost'
+        'PORT': '5432',  # Default PostgreSQL port is 5432
     }
 }
 
 
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
+# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -85,21 +94,3 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/4.1/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.1/howto/static-files/
-
-STATIC_URL = '/static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
