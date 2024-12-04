@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_spectacular',
     'Users',
 ]
 
@@ -95,3 +96,38 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+# Django Rest Framework Settings
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_RENDERER_CLASSES": [
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework.renderers.BrowsableAPIRenderer",
+    ],
+    "DEFAULT_PARSER_CLASSES": [
+        "rest_framework.parsers.JSONParser",
+        "rest_framework.parsers.FormParser",
+        "rest_framework.parsers.MultiPartParser",
+        "rest_framework.parsers.FormParser",
+        "rest_framework.parsers.MultiPartParser",
+    ],
+}
+
+# Spectacular Settings
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Portfolio API",
+    "DESCRIPTION": "API for Portfolio",
+    "VERSION": "1.0",
+    "CONTACT": {
+        "email": "contact@abusaym.com",
+    },
+    "SERVE_INCLUDE_SCHEMA": True,
+    # OTHER SETTINGS
+    "SWAGGER_UI_SETTINGS": {
+        "deepLinking": True,
+        "persistAuthorization": True,
+        "displayOperationId": True,
+    },
+    "SWAGGER_UI_DIST": "https://cdn.jsdelivr.net/npm/swagger-ui-dist@latest",
+    "REDOC_DIST": "https://cdn.jsdelivr.net/npm/redoc@latest",
+}
